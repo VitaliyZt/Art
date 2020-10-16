@@ -57,14 +57,20 @@ body {
 }
 
 .sheading {
+  position: relative;
   font: 3.09375rem/1 "LetoSans-Bold";
+  z-index: 1;
 }
 
-.sheading span {
+.sheading > span {
+  display: block;
+}
+
+.sheading-bordered {
   position: relative;
 }
 
-.sheading span:before {
+.sheading-bordered:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -159,9 +165,7 @@ body {
 }
 
 .s3__heading {
-  position: relative;
   margin: 0 0 -1em 19.7%;
-  z-index: 1;
 }
 
 .s3__images {
@@ -246,9 +250,7 @@ body {
 }
 
 .s4__heading {
-  position: relative;
   margin: 0 0 0 36.7%;
-  z-index: 1;
 }
 
 .s4__box {
@@ -284,9 +286,7 @@ body {
 }
 
 .s5__heading {
-  position: relative;
   margin: 0 0 0 26%;
-  z-index: 1;
 }
 
 .s5__images {
